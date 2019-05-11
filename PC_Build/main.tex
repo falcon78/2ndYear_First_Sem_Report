@@ -24,7 +24,6 @@ paperwidth=8.5in%
 
 \setCJKmainfont{Meiryo.ttf}
 
-
 \title{パソコン組み立て}
 \author{18NC021 \thanks{情報通信基礎実験１}}
 \date{カトリ　スザン}
@@ -33,68 +32,63 @@ paperwidth=8.5in%
 \begin{document}
 
 
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\section{目的}
+パソコン組み立てとセットアップを行うことにより、コンピュータの仕組みの理解を深め、
+コンピュータに関する実用的な基礎的知識を身につけることを目的とする。これは卒業研究のための予備
+知識、及び卒業後に役立つパーソナルコンピュータ、オペレーティングシステム、コンピュータネットワーク
+の基礎知識となる。
 
 
+\section{使用機器}
+本実験で利用したパーツ
+\begingroup
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+% Parts list table
+\begin{table}[H]
+    \centering
+	\caption{使用機器}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		パーツ名 & メーカー & 型番等 \\ [0.5ex] 
+		\hline\hline
+		PCケース                & ENERMAX             & EC A3360B-BT(U3)               \\ \hline
+		CPU                  & Intel               & Celeron G3900 2.8Ghz ,2MB      \\ \hline
+		マザーボード               & GIGABYTE            & HA-H270-Gaming 3               \\ \hline
+		メモリ                  & Transcend           & JM2666HLH-4G　288Pin　4GBｘ２      \\ \hline
+		SSD （3.5インチ名取り付け金具付） & Transcend           & TS128GSSD230S                  \\ \hline
+		光学ドライブ               & I-O Data            & DVR-S24EK                      \\ \hline
+		CPUクーラー              & Silver Stone        & NT09-115X                      \\ \hline
+		グラフィックボード            & 玄人志向                & GF-GT710-E1GB/LP               \\ \hline
+		電源                   & Links　International & NE550C                         \\ \hline
+		マウス                  & Microsoft           & Comfort Optical Mouse 3000 USB \\ \hline
+		キーボード                &                     & 106　日本語キーボード                   \\ \hline
+		ケーブル類                &                     & SATAケーブル、電源ケーブル                \\ \hline
+	\end{tabular}
+\end{table} 
+\endgroup
+\pagebreak
 
-	\begin{titlepage}
-		\maketitle
-	\end{titlepage}
-	
-	\tableofcontents
-	\pagebreak
-	
-	\section{目的}
-	
-	パソコン組み立てとセットアップを行うことにより、コンピュータの仕組みの理解を深め、
-	コンピュータに関する実用的な基礎的知識を身につけることを目的とする。これは卒業研究のための予備
-	知識、及び卒業後に役立つパーソナルコンピュータ、オペレーティングシステム、コンピュータネットワーク
-	の基礎知識となる。
-	
-	\section{使用機器}
-	
-	本実験で利用したパーツ
-	
-	
-	\begingroup
-	\setlength{\tabcolsep}{5pt} % Default value: 6pt
-	\renewcommand{\arraystretch}{1.5} % Default value: 1
-	
-	\begin{table}[H]
-	    \centering
-		\caption{使用機器}
-		\begin{tabular}{|l|l|l|}
-			
-			\hline
-			パーツ名 & メーカー & 型番等 \\ [0.5ex] 
-			\hline\hline
-			PCケース                & ENERMAX             & EC A3360B-BT(U3)               \\ \hline
-			CPU                  & Intel               & Celeron G3900 2.8Ghz ,2MB      \\ \hline
-			マザーボード               & GIGABYTE            & HA-H270-Gaming 3               \\ \hline
-			メモリ                  & Transcend           & JM2666HLH-4G　288Pin　4GBｘ２      \\ \hline
-			SSD （3.5インチ名取り付け金具付） & Transcend           & TS128GSSD230S                  \\ \hline
-			光学ドライブ               & I-O Data            & DVR-S24EK                      \\ \hline
-			CPUクーラー              & Silver Stone        & NT09-115X                      \\ \hline
-			グラフィックボード            & 玄人志向                & GF-GT710-E1GB/LP               \\ \hline
-			電源                   & Links　International & NE550C                         \\ \hline
-			マウス                  & Microsoft           & Comfort Optical Mouse 3000 USB \\ \hline
-			キーボード                &                     & 106　日本語キーボード                   \\ \hline
-			ケーブル類                &                     & SATAケーブル、電源ケーブル                \\ \hline
-		\end{tabular}
-	\end{table}
-	\endgroup
-	\pagebreak
-	
-	\section{回路図}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.704\textwidth]{pc.png}
-			\caption{回路図}
-		\end{figure}
-	\section{実験方法}
-		\subsection{電源の取り付け}
-			\hspace{1cm} PCケースに電源を取り付ける。
-		\subsection{CPUの取り付け}
-			\hspace{1cm} マザーボードのCPUソケットにCPUを取り付けける。
+\section{回路図}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.704\textwidth]{pc.png}
+		\caption{回路図}
+	\end{figure}
+\pagebreak
+
+\section{実験方法}
+	\subsection{電源の取り付け}
+		\hspace{1cm} PCケースに電源を取り付ける。
+	\subsection{CPUの取り付け}
+		\hspace{1cm} マザーボードのCPUソケットにCPUを取り付けける。
 
 \subsection{CPUファンの取り付け}
 \hspace{1cm} CPUファンを取り付け、ファンの電源コネクターをマザーボードに接続する。			
@@ -128,9 +122,6 @@ paperwidth=8.5in%
 \subsubsection{ATX電源ケーブル}
 \hspace{1cm}マザーボードにATX電源(24ピン)とCPU電源(8ピン)ケーブルを接続する。コネクターの凸部とケーブルの凸部を同じ向きにして奥までしっかり差し込む。
 
-
-
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=5cm]{6PIN.png}
@@ -144,7 +135,7 @@ paperwidth=8.5in%
 \end{figure}
 
 \subsubsection{フロントパネルのUSBコネクタ}
-\hspace{1cm}PCケースのフロントパネルのUSB2.0と3.0ケーブルをマザーボードピンヘッダーに接続する。
+\hspace{1cm}PCケースのフロントパネルのUSB2.0と3.0ケーブルをマザーボードピンヘッダーに接続。
 
 \begin{figure}[H]
 	\centering
@@ -159,7 +150,7 @@ paperwidth=8.5in%
 
 
 \subsubsection{FANケーブル}
-\hspace{1cm}マザーボードの４ピンファンヘッダーに、ケースファンの３ピンコネクターを接続する。
+\hspace{1cm}マザーボードの４ピンファンヘッダーに、ケースファンの３ピンコネクターを接続。
 
 \begin{figure}[H]
 	\centering
@@ -176,7 +167,7 @@ paperwidth=8.5in%
 \end{figure}
 
 \subsection{LED及びスイッチケーブルの配線}
-\hspace{1cm}マザーボードのピンヘッダにPOWER LED, HDD LED, POWERスイッチ、　リセットスイッチを接続する。
+\hspace{1cm}マザーボードのピンヘッダにPOWER LED, HDD LED, POWERスイッチ、　リセットスイッチを接続。
 
 \begin{figure}[H]
 	\centering
@@ -187,12 +178,12 @@ paperwidth=8.5in%
 
 
 \subsection{モニター、キーボード、マウスの取り付け}
-\hspace{1cm}キーボードはPS2ポートに接続し、マウスはUSBポートに接続する。GPUのディスプレイコネクターにモニターケーブルを接続し、モニターには電源ケーブルを接続してからモニターの電源をつける。次に電源ユニットに電源ケーブルを接続してコンセントにつなぐ。ここまで終わったら指導員を読んで確認を依頼する。
+\hspace{1cm}キーボードはPS2ポートに接続し、マウスはUSBポートに接続する。GPUのディスプレイコネクターにモニターケーブルを接続し、モニターには電源ケーブルを接続してからモニターの電源をつける。次に電源ユニットに電源ケーブルを接続してコンセントにつなぐ。ここまで終わったら指導員を読んで確認を依頼。
 
 
 \subsection{ 電源投入と BIOS の設定}
 \hspace{1cm}			
- 電源を ON にしその直後に「DEL」キーを連打すると BIOS 設定画面が表示される。 ここまでうまくいったらCPU電圧などの値を記録して、ボートデバイスからWidnowsのインストーラーをブートする。
+ 電源を ON にしその直後に「DEL」キーを連打すると BIOS 設定画面が表示される。 ここまでうまくいったらCPU電圧などの値を記録して、ボートデバイスからWidnowsのインストーラーをブート。
 
 \subsection{Windows 10 のインストール}
 \hspace{1cm}Windows 10をSSDにインストールし、Windowsの初期設定を行う。
@@ -206,9 +197,9 @@ paperwidth=8.5in%
 \subsection{ネットワークテスト}
 \hspace{1cm}
 \subsubsection{インターネットアクセステスト}
-	インターネットにアクセスできているかを確認するため "www.c.dendai.ac.jp"などのウェブサイトをアクセスしてみる。 
+	インターネットにアクセスできているかを確認するため "www.c.dendai.ac.jp"などのウェブサイトをアクセス。 
 \subsubsection{ipconfig}
-	ipconfig /allでネットワークデバイスの情報を確認する。そしてその内容をUSBに保存する。
+	ipconfig /allでネットワークデバイスの情報を確認する。そしてその内容をUSBに保存。
 
 \subsection{分解}
 \hspace{1cm}PCを分解して、パーツをもとの場所に戻す。
@@ -263,7 +254,8 @@ IPv6 アドレス . . . . . . . . . . . .: 2001:0:348b:fb58:30a6:2357:7aeb:d5ec(
 DHCPv6 IAID . . . . . . . . . . . . .: 117440512
 DHCPv6 クライアント DUID. . . . . . .: 00-01-00-01-24-4F-4F-36-1C-1B-0D-A6-01-AC
 NetBIOS over TCP/IP . . . . . . . . .: 無効
-\end{alltt}
+\end{alltt} % Network Log
+
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
 
@@ -328,27 +320,19 @@ NetBIOS over TCP/IP . . . . . . . . .: 無効
 
 \section{検討事項}
 \subsection{ストアドプログラム方式}
-\hspace{1cm} プログラム命令をRAMなどの主記憶装置に保存し、その命令を実行するコンピュータアーキテクチャ方式である。（ノイマン型アーキテクチャ、ハーバードアーキテクチャなど）
+\hspace{1cm} プログラム命令を主記憶装置に保存し、その命令を逐次実行するコンピュータアーキテクチャ方式である。（ノイマン型アーキテクチャ、ハーバードアーキテクチャなど）
 \subsection{OSの目的と機能}
 \subsubsection{目的}
-$\bullet$ システム上にあるチップ、記憶装置などを制御する役割を果たしている。 システム上のパーツをすべて制御し、それらのパーツへのインターフェースをAPIをして提供しており、これ使うことによってソフトの開発者が数多くCPUアーキテクチャや記憶装置別にプログラムを書かなくてすむ。また、TCP・IPの実装やシステムクロックの制御などもすべてOSがやってくれていて、もしプログラマが時間を取得したい場合はAPIコールでシステムに要求すれば簡単に取得できる。\\
-$\bullet$プログラムが任意にメモリをアクセスできないようにしたり（セグメンテーション）、使わなくなったメモリを開放したりすることによってセキュリティーやパフォーマンスが向上される。
+$\bullet$ システム上にあるチップ、記憶装置などを制御する役割を果たしている。 システム上のパーツをすべて制御し、それらのパーツへのインターフェースをAPIとして提供しており、これ使うことによってソフトの開発者が数多くCPUアーキテクチャや記憶装置別にプログラムを書かなくてよい。また、TCP・IPの実装やシステムクロックの制御などもすべてOSがやってくれて、もしプログラマが時間を取得したい場合はAPIコールでシステムに要求すれば簡単に取得できる。\\
+$\bullet$プログラムが任意にメモリにアクセスできないようにしたり（セグメンテーション）、使わなくなったメモリを開放したりすることによってセキュリティーやパフォーマンスが向上される。
 
 \subsubsection{機能}
 $\bullet$ ファイルエクスプローラーなどを使うことによってCUIに触れなくてもファイルを簡単に操作できる。\\
-$\bullet$ GUIを使うことによってパソコンの知識(開発)が詳しくない人でもプログラムを容易にインストールしたり、システムの設定を変えたりすることができる。\\
+$\bullet$ GUIを使うことによってパソコンに詳しくない人でもプログラムを容易にインストールしたり、システムの設定を変えたりすることができる。\\
 $\bullet$ CPUアーキテクチャなどが異なるパソコンどうしで同じアプリを使うことができる。\\
-$\bullet$ 記憶装置やハードウェアの健康状態をモニタリングし(S.M.A.R.Tなど)、異常があるときに注意してくれる。
+$\bullet$ 記憶装置やハードウェアの健康状態をモニタリングし(S.M.A.R.Tなど)、異常があるときは注意してくれる。
 
 \section{吟味 （考察）}
-$\bullet$ 今までは主にLGA2011やAMDのシステムしか組んだことなかったので本実験では、LGA1151ソケットにＣＰＵクーラーを取り付ける方法を理解しました。
+$\bullet$ 今までは主にLGA2011やAMDのシステムしか組んだことなかったのですが本実験では、LGA1151ソケットにＣＰＵクーラーを取り付ける方法などについて学習しました。
 
 \end{document}
-
-
-
-
-% \begin{verbatim}
-%このテキストは、別のフォントを持つことになります
-%This is a verbatim environment with mono-space font
-%\end{verbatim} 
