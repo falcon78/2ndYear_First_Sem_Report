@@ -1,10 +1,10 @@
 
 \documentclass[10pt]{article}
 \usepackage[%
-left=0.70in,%
-right=0.70in,%
-top=1.0in,%
-bottom=1.0in,%
+left=0.984252in,%
+right=0.787402in,%
+top=0.787402in,%
+bottom=0.787402in,%
 paperheight=11in,%
 paperwidth=8.5in%
 ]{geometry}%
@@ -22,7 +22,8 @@ paperwidth=8.5in%
 \usepackage{float}
 \usepackage{alltt}
 
-\setCJKmainfont{Meiryo.ttf}
+\setCJKmainfont{AozoraMinchoRegular.ttf}
+\setCJKsansfont{AozoraMincho-bold.ttf}
 
 \title{パソコン組み立て}
 \author{18NC021 \thanks{情報通信基礎実験１}}
@@ -102,14 +103,14 @@ paperwidth=8.5in%
 
 
 \subsection{GPUの取り付け}
-\hspace{1cm}ケースのGPUスロットの金属プレートを取り外し、マザーボードのPCIEポートにGPUを差し込みねじで止める。
+\hspace{1cm}ケースのGPUスロットの金属プレートを取り外し、マザーボードのPCIEポートにGPUを差し込みGPUをケースにネジで固定する。
 
 
 \subsection{ハードディスク(SSD)、光学ドライブの取り付け}
 \hspace{1cm}2.5インチSSDに3.5インチ変換プレートを取り付けた後SSDをケースの３．５インチベイに取り付ける。そしてDVDドライブをドライブベイに取り付ける。
 
 \subsection{各種ケーブルの接続}
-\subsubsection{SATA,電源}\hspace{1cm}　SATA電源ケーブルをSSDとドライブに接続する。次にSATAケーブル(データ)でSSDとドライブをマザーボードと接続する。マザーボードの SATA ケーブルコネクタの位置を図2に図示する。
+\subsubsection{SATA,電源}\hspace{1cm}　SATA電源ケーブルをSSDとドライブに接続する。次にSATAケーブル(データ)でSSDとドライブをマザーボードに接続する。マザーボードの SATA ケーブルコネクタの位置を図2に図示する。
 
 \begin{figure}[H]
 	\centering
@@ -183,7 +184,7 @@ paperwidth=8.5in%
 
 \subsection{ 電源投入と BIOS の設定}
 \hspace{1cm}			
- 電源を ON にしその直後に「DEL」キーを連打すると BIOS 設定画面が表示される。 ここまでうまくいったらCPU電圧などの値を記録して、ボートデバイスからWidnowsのインストーラーをブート。
+ 電源を ON にしその直後に「DEL」キーを連打すると BIOS 設定画面が表示される。 ここまでうまくいったらCPU電圧などの値を記録して、ブートデバイスからWidnowsのインストーラーをブート。
 
 \subsection{Windows 10 のインストール}
 \hspace{1cm}Windows 10をSSDにインストールし、Windowsの初期設定を行う。
@@ -324,7 +325,7 @@ NetBIOS over TCP/IP . . . . . . . . .: 無効
 \subsection{OSの目的と機能}
 \subsubsection{目的}
 $\bullet$ システム上にあるチップ、記憶装置などを制御する役割を果たしている。 システム上のパーツをすべて制御し、それらのパーツへのインターフェースをAPIとして提供しており、これ使うことによってソフトの開発者が数多くCPUアーキテクチャや記憶装置別にプログラムを書かなくてよい。また、TCP・IPの実装やシステムクロックの制御などもすべてOSがやってくれて、もしプログラマが時間を取得したい場合はAPIコールでシステムに要求すれば簡単に取得できる。\\
-$\bullet$プログラムが任意にメモリにアクセスできないようにしたり（セグメンテーション）、使わなくなったメモリを開放したりすることによってセキュリティーやパフォーマンスが向上される。
+$\bullet$プログラムが任意のメモリにアクセスできないようにしたり（セグメンテーション）、使わなくなったメモリを開放したりすることによってセキュリティーやパフォーマンスが向上される。
 
 \subsubsection{機能}
 $\bullet$ ファイルエクスプローラーなどを使うことによってCUIに触れなくてもファイルを簡単に操作できる。\\
@@ -332,7 +333,7 @@ $\bullet$ GUIを使うことによってパソコンに詳しくない人でも�
 $\bullet$ CPUアーキテクチャなどが異なるパソコンどうしで同じアプリを使うことができる。\\
 $\bullet$ 記憶装置やハードウェアの健康状態をモニタリングし(S.M.A.R.Tなど)、異常があるときは注意してくれる。
 
-\section{吟味 （考察）}
+\section{吟味 （考察)}
 $\bullet$ 今までは主にLGA2011やAMDのシステムしか組んだことなかったのですが本実験では、LGA1151ソケットにＣＰＵクーラーを取り付ける方法などについて学習しました。
 
 \end{document}
